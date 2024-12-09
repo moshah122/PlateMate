@@ -1,0 +1,107 @@
+body {
+    font-family:  "Times New Roman", Times, serif;
+    text-align: center;
+    background-color: tan;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    color: #000000;
+    text-decoration: underline;
+}
+
+.descr {
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+    margin-top: 20px;
+    text-align: center;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #000000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:darkkhaki;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+input[type="file"] {
+    margin-bottom: 10px;
+    font-family: "Times New Roman", Times, serif;
+    background-color:blueviolet;
+    color: white;
+}
+
+input[type="file"]:hover {
+    text-decoration: underline;
+}
+
+img {
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.result {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    color: #000000;
+}
+
+.generalDisplay {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    color: #000000;
+}
+
+.button {
+    background-color: green;
+    color:coral;
+    border: 4px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Times New Roman", Times, serif;
+    margin-top: 20px;
+}
+
+.button:hover {
+    text-decoration: underline;
+}
+
+.totalValue {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    color: #000000;
+}
+
+.text {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
