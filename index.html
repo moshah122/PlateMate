@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--This sets up the main frame of the website with the title of the tab-->
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlateMate: Automated Nutrient Tracking System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<!--This represents what will be displayed when the user first opens the site-->
+<body>
+    <h1>PlateMate: Automated Nutrient Tracking System</h1>
+    <!--A description as to what the site is about-->
+    <p class="descr">This is a TensorFlow.js powered application that tracks the nutritional value of a plate (calories, protein, 
+        carbohydrates, sugars). Scan each item and press "Perform" to get the nutritional summary.
+    </p>
+    <p class="descr">By: Mohit Shah and Maanas Goel</p>
+    <!--Format of the site is a vertical thread of 4 file inputs along with the general displays for each-->
+    <div class="container">
+        <div class="inputs">
+            <div class="item" id="item1">
+                <input type="file" id="input1" accept="image/*" />
+                <div class="overallResult">
+                    <img id="image1" />
+                    <div class="result" id="result1"></div>
+                    <div class="generalDisplay" id="display1">
+                        <div id="cal1"></div>
+                        <div id="prot1"></div>
+                        <div id="carb1"></div>
+                        <div id="sugar1"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" id="item2">
+                <input type="file" id="input2" accept="image/*" />
+                <div class="overallResult">
+                    <img id="image2" />
+                    <div class="result" id="result2"></div>
+                    <div class="generalDisplay" id="display2">
+                        <div id="cal2"></div>
+                        <div id="prot2"></div>
+                        <div id="carb2"></div>
+                        <div id="sugar2"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" id="item3">
+                <input type="file" id="input3" accept="image/*" />
+                <div class="overallResult">
+                    <img id="image3" />
+                    <div class="result" id="result3"></div>
+                    <div class="generalDisplay" id="display3">
+                        <div id="cal3"></div>
+                        <div id="prot3"></div>
+                        <div id="carb3"></div>
+                        <div id="sugar3"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" id="item4">
+                <input type="file" id="input4" accept="image/*" />
+                <div class="overallResult">
+                    <img id="image4" />
+                    <div class="result" id="result4"></div>
+                    <div class="generalDisplay" id="display4">
+                        <div id="cal4"></div>
+                        <div id="prot4"></div>
+                        <div id="carb4"></div>
+                        <div id="sugar4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="button" onclick="classify()">Perform</button>
+
+        <!--Total value of all calories, protein, carbs, and sugars displayed after all file inputs-->
+        <div class="totalValue">
+            <p>Aggregate Calories (kcal): <span id="calCount">0</span></p>
+            <p>Aggregate Protein (g): <span id="proteinCount">0</span></p>
+            <p>Aggregate Carbs (g): <span id="carbCount">0</span></p>
+            <p>Aggregate Sugars (g): <span id="sugarCount">0</span></p>
+        </div>
+    </div>
+
+    <!--Imports the relevant tf.js libraries-->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-cpu"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-tflite@0.0.1-alpha.8/dist/tf-tflite.min.js"></script>
+    <script src="classifer.js"></script>
+</body>
+
+</html>

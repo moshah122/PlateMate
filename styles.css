@@ -1,0 +1,115 @@
+/*style for the body of the page*/
+body {
+    font-family:  "Times New Roman", Times, serif;
+    text-align: center;
+    background-color: tan;
+}
+
+/*style for the heading/title of the page*/
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    color: #000000;
+    text-decoration: underline;
+}
+
+/*style for the paragraph explaing our project*/
+.descr {
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+    margin-top: 20px;
+    text-align: center;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #000000;
+}
+
+/*style for overall container of elements of the site*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:darkkhaki;
+}
+
+/*style for the inputs as a flex-box*/
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*style for each item as a flex-box*/
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+/*style for each of the file-inputs*/
+input[type="file"] {
+    margin-bottom: 10px;
+    font-family: "Times New Roman", Times, serif;
+    background-color:blueviolet;
+    color: white;
+}
+
+/*style for when the mouse is hovered on the file input*/
+input[type="file"]:hover {
+    text-decoration: underline;
+}
+
+/*style for the image display*/
+img {
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+/*style for the result display*/
+.result {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    color: #000000;
+}
+
+/*style for the general display for each individual item*/
+.generalDisplay {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    color: #000000;
+}
+
+/*style for the Perform button*/
+.button {
+    background-color: green;
+    color:coral;
+    border: 4px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Times New Roman", Times, serif;
+    margin-top: 20px;
+}
+
+/*style for when the mouse is hovered on the Perform button*/
+.button:hover {
+    text-decoration: underline;
+}
+
+/*style for the grand total entries on the bottom of the page*/
+.totalValue {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    color: #000000;
+}
